@@ -32,19 +32,13 @@
 
 ## Requisitos
 
-- Navegador compatível com HTML5 e JavaScript.
+- Navegador compatível com HTML5 e JavaScript. Atualmente não é possível utilizar via mobile.
 
 ## Estrutura de Arquivos
 
 - **index.html**: Página principal contendo a interface e referências aos scripts.
 - **sketch.js**: Script que controla a visualização do áudio e a interação com o usuário.
 - **style.css**: Estilos para a página HTML e os botões.
-
-## Possíveis Melhorias
-
-- Suporte para diferentes formatos de áudio.
-- Animações mais complexas, variando conforme a intensidade e ritmo da música.
-- Personalização da cor das ondas de som.
 
 ## Créditos
 
