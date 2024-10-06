@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Visualizador de Áudio Interativo com P5.js</title>
+</head>
+<body>
+  <main>
+    <h1>Íris</h1>
+    
+    <h2>Este projeto utiliza a biblioteca <a href="https://p5js.org">P5.js</a> para criar um visualizador de áudio interativo. Ele é uma representação visual das ondas sonoras de um arquivo de áudio. Neste caso, ao carregar seu arquivo de áudio, o visualizador analisará as frequências do som em tempo real e as apresentará em uma animação dinâmica. </h2>
+    
+    <h3>⚙️ Instruções de Uso:</h3>
+    
+    <p><strong>1. Selecione o arquivo de áudio</strong>: Clique no botão "Escolher Arquivo" e selecione um arquivo de áudio do seu dispositivo (precisa ser em formato mp3)</p>
+    <p><strong>2. Inicie a reprodução</strong>: Pressione o botão "Play" para começar a tocar o áudio e visualizar a animação. Você pode clicar novamente no botão para pausar o áudio e a animação. </p>
+    <p><strong>3. Salve a visualização</strong>: Clique no botão "Salvar" para baixar a imagem da visualização. </p>
+
+    <p>✨Gostou do resultado? Salve a imagem e publique nas redes sociais! Não se esqueça de me marcar 💌<a href="https://www.instagram.com/piaanco/">@piaanco</a> no Instagram.</p>
+
+    <div class="button-group">
+
+      <label for="fileInput" class="custom-file-input">Escolher Arquivo</label>
+      <input type="file" id="fileInput" accept="audio/*" style="display:none;" />      
+
+      <button class="custom-btn" id="audio" onclick="toggleAudio()">
+        Play
+      </button>
+
+      <button class="custom-btn" onclick="saveSketch()">
+        Salvar
+      </button>
+    </div>
+    
+    <div id="canvasContainer"></div>
+  </main>
+  
+  <script src="sketch.js"></script>
+  
+  <footer>
+  <ul>
+    <p>Assets utilizados:</p>
+    <li>Google Fonts: [Playfair/Roboto] - disponível em  <a href="https://fonts.google.com">https://fonts.google.com</a></li>
+    <li>p5.js - disponível em <a href="https://p5js.org/">https://p5js.org/</a></li>
+  </ul>
+</footer>
+  
+</body>
+</html>
